@@ -1,0 +1,177 @@
+body {
+	margin: 0;
+	background: rgb(15, 15, 15, 1);
+}
+
+
+.pf-card {
+	display: block;
+	background: linear-gradient(to bottom, rgb(5, 5, 5,1),rgb(10, 10, 10, 0.5)) no-repeat center center;
+	background-size: cover;
+	height: 610px;
+	width: 80%;
+	border-radius: 15px;
+	margin: 80px auto;
+	overflow: hidden;  
+	/* BACKGROUND SHADOW  TRANSITION */
+	transition: 0.8s;
+}
+
+.pf-card:hover {
+	transition: box-shadow 1s ease-out;
+	animation: pf-cardAnim 5s infinite;
+}
+
+.pf-card .img1 {
+	display: block;
+	border-radius: 100%;
+	box-shadow: 0 0 5px white,
+	0 0 2px black,
+	0 0 5px rgb(12,12,12,1);
+	margin: 45px auto;
+	height: 160px;
+	width: auto;
+}
+
+.pf-card .username {
+	color: white;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+
+.pf-card .bio {
+	display: block;
+	margin: 10px auto;
+	font-family: Verdana;
+	color: white;
+	font-size: 15px;
+}
+
+.pf-card .links{
+	display: block;
+	margin: 90px auto;
+	font-family: Verdana;
+	color: white;
+	font-size: 15px;
+}
+
+.pf-card .link1 {
+	display: block;
+	text-decoration: none;
+	margin: -50px auto;
+	font-size: 15px;
+	color: white;
+	border-radius: 15px;
+	background: linear-gradient(to bottom, rgb(88, 101, 242,1), rgb(80, 101, 242, 0.8));
+	border: 1px solid rgb(1, 1, 1,1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 50%;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	transition: 1s;
+
+}
+
+.pf-card .link2 {
+	display: block;
+	text-decoration: none;
+	margin: 60px auto;
+	font-size: 15px;
+	color: white;
+	border-radius: 15px;
+	background: linear-gradient(to bottom, rgb(230, 33, 23,1), rgb(225, 33, 23, 0.8));
+	border: 1px solid rgb(1, 1, 1,1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 50%;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	transition: 1s;
+}
+
+.pf-card .link1:hover, .link2:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+.infos {
+	display: block;
+	margin: -10px auto;
+	font-family: Verdana;
+	color: white;
+	opacity: 0.7;
+	font-size: 13px;
+}
+
+.infosEnd {
+	display: block;
+	margin: 10px auto;
+	font-family: Verdana;
+	color: white;
+	opacity: 0.7;
+	font-size: 12px;
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes pf-cardAnim {
+	0% {
+		box-shadow: 0 0 5px purple, 
+        0 0 10px black, 
+        0 0 15px black, 
+        0 0 20px black, 
+        0 0 25px black, 
+        0 0 30px black, 
+        0 0 2px purple;
+	}
+
+	20% {
+		box-shadow: 0 0 5px #ffffff, 
+        0 0 10px black, 
+        0 0 15px black, 
+        0 0 20px black, 
+        0 0 25px black, 
+        0 0 30px black, 
+        0 0 2px #ffffff;
+	}
+
+	40% {
+		box-shadow: 0 0 5px red, 
+        0 0 10px black, 
+        0 0 15px black, 
+        0 0 20px black, 
+        0 0 25px black, 
+        0 0 30px black, 
+        0 0 2px red;
+	}
+
+	60% {
+		box-shadow: 0 0 5px green, 
+        0 0 10px black, 
+        0 0 15px black, 
+        0 0 20px black, 
+        0 0 25px black, 
+        0 0 30px black, 
+        0 0 2px green;
+	}
+
+	80% {
+		box-shadow: 0 0 5px blue, 
+        0 0 10px black, 
+        0 0 15px black, 
+        0 0 20px black, 
+        0 0 25px black, 
+        0 0 30px black, 
+        0 0 2px blue;
+	}
+
+	100% {
+		box-shadow: 0 0 5px purple, 
+        0 0 10px black, 
+        0 0 15px black, 
+        0 0 20px black, 
+        0 0 25px black, 
+        0 0 30px black, 
+        0 0 2px purple;
+	}
+}
