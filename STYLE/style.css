@@ -1,12 +1,14 @@
 body {
 	margin: 0;
-	background: rgb(15, 15, 15, 1);
+	background: url('../IMAGES/bg.jpeg');
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 
 .pf-card {
 	display: block;
-	background: linear-gradient(to bottom, rgb(5, 5, 5,1),rgb(10, 10, 10, 0.5)) no-repeat center center;
+	background: linear-gradient(to bottom, rgb(5, 5, 5,1),rgb(10, 10, 10, 0.8)) no-repeat center center;
 	background-size: cover;
 	height: 610px;
 	width: 80%;
@@ -14,11 +16,10 @@ body {
 	margin: 80px auto;
 	overflow: hidden;  
 	/* BACKGROUND SHADOW  TRANSITION */
-	transition: 0.8s;
+	transition: 1s;
 }
 
 .pf-card:hover {
-	transition: box-shadow 1s ease-out;
 	animation: pf-cardAnim 5s infinite;
 }
 
